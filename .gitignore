@@ -1,0 +1,72 @@
+# =============================
+# Global Node.js Ignore
+# =============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+.env
+.env.*
+
+
+# =============================
+# Build Output
+# =============================
+dist/
+build/
+.cache/
+.next/
+out/
+
+# =============================
+# Logs
+# =============================
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =============================
+# IDE / Editor files
+# =============================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =============================
+# OS generated files
+# =============================
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# =============================
+# Ecommerce-Client Specific
+# =============================
+ecommerce-client/node_modules/
+ecommerce-client/.env
+ecommerce-client/.next/
+ecommerce-client/build/
+ecommerce-client/dist/
+
+# =============================
+# Ecommerce-Server Specific
+# =============================
+ecommerce-server/node_modules/
+ecommerce-server/.env
+ecommerce-server/dist/
+ecommerce-server/coverage/
+
+# =============================
+# Testing
+# =============================
+coverage/
+*.lcov
