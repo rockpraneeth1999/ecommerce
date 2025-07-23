@@ -90,22 +90,22 @@ You can populate the product list with sample data:
 ## 📂 Project Structure
 
 ECOMMERCE
-├───ecommerce-client
-│ ├───public
-│ └───src
-│ ├───api
-│ ├───assets
-│ ├───components
-│ ├───context
-│ └───pages
-│ ├───Admin
-│ └───Auth
-├───ecommerce-db
-└───ecommerce-server
-├───config
-├───controllers
-├───middlewares
-├───models
-├───queries
-├───routes
-└───utils
+├── ecommerce-client
+│   ├── public
+│   └── src
+│       ├── api
+│       ├── assets
+│       ├── components
+│       ├── context
+│       └── pages
+│           ├── Admin
+│           └── Auth
+├── ecommerce-db
+├── ecommerce-server
+│   ├── config
+│   ├── controllers
+│   ├── middlewares
+│   ├── models
+│   ├── queries
+│   ├── routes
+│   └── utils
