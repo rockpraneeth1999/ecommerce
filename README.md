@@ -1,1 +1,86 @@
-# ecommerce
+# Ecommerce Project
+
+A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (frontend), Node.js & Express (backend), and MySQL (database).
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** [React (Vite)](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend:** [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/)
+- **Database:** [MySQL](https://www.mysql.com/)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Database Setup
+
+1. Ensure MySQL is installed and running.
+2. Open your MySQL client.
+3. Copy and execute the `create_schema.sql` file inside the `DB scripts` folder to create the required database and tables.
+
+### 2. Backend Setup
+
+1. Navigate to the backend folder:
+   ```
+   cd ecommerce-server
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a `.env` file in the root of `ecommerce-server`:
+
+   ```
+   PORT=3000
+   DB_HOST=localhost
+   DB_USER=your_root
+   DB_PASSWORD=your_root_password
+   DB_NAME=ecommerce_db
+   DB_DIALECT=mysql
+   JWT_SECRET=!@$%^&*1234567890
+
+   ADMIN_NAME=Admin
+   ADMIN_EMAIL=admin@admin.com
+   ADMIN_PASSWORD=admin123
+   ```
+
+   > **Note:** Replace `your_root` and `your_root_password` with your actual MySQL credentials.
+
+4. Start the backend server:
+   ```
+   npm run start
+   ```
+   The server should now be running on [http://localhost:3000](http://localhost:3000).
+
+### 3. Frontend Setup
+
+1. Open a new terminal and navigate to the frontend folder:
+   ```
+   cd ecommerce-client
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+   The app will most likely run on [http://localhost:5173](http://localhost:5173) by default.
+
+---
+
+## ⚡ Optional: Generate Sample Products
+
+You can populate the product list with sample data:
+
+1. Execute the `generate_products` script (located in the appropriate folder—refer to project documentation/files for the exact location).
+   ```
+   node generate_products.js
+   ```
+
+---
+
+## 📂 Project Structure
