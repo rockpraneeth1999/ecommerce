@@ -10,7 +10,8 @@ export default function AddProduct() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createProduct({ name, description, price, stock });
+      await createProduct({ name, description, price });
+      // await createProduct({ name, description, price, stock });
       alert("Product added successfully!");
       setName("");
       setDescription("");
