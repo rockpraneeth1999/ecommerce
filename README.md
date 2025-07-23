@@ -17,8 +17,8 @@ A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (fro
 ### 1. Database Setup
 
 1. Ensure MySQL is installed and running.
-2. Open your MySQL client.
-3. Copy and execute the `create_schema.sql` file inside the `DB scripts` folder to create the required database and tables.
+2. Open MySQL Workbench (or your preferred client).
+3. Copy and execute the `create_schema.sql` file inside the `ecommerce-db` folder to create the required database and tables.
 
 ### 2. Backend Setup
 
@@ -46,7 +46,8 @@ A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (fro
    ADMIN_PASSWORD=admin123
    ```
 
-   > **Note:** Replace `your_root` and `your_root_password` with your actual MySQL credentials.
+   > **Note:** Replace `your_root` and `your_root_password` with your actual MySQL credentials.  
+   > **Note:** You can also customize `ADMIN_NAME`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD` as desired.
 
 4. Start the backend server:
    ```
@@ -64,11 +65,17 @@ A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (fro
    ```
    npm install
    ```
-3. Start the development server:
+3. Create a `.env` file in the root of `ecommerce-client`:
+
+   ```
+   VITE_API_URL=http://localhost:3000/api
+   ```
+
+4. Start the development server:
    ```
    npm run dev
    ```
-   The app will most likely run on [http://localhost:5173](http://localhost:5173) by default.
+   The app will likely run on [http://localhost:5173](http://localhost:5173) by default.
 
 ---
 
@@ -76,9 +83,9 @@ A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (fro
 
 You can populate the product list with sample data:
 
-1. Execute the `generate_products` script (located in the appropriate folder—refer to project documentation/files for the exact location).
+1. Execute the `generate_products.js` script from the `ecommerce-db` folder:
    ```
-   node generate_products.js
+   node ecommerce-db/generate_products.js
    ```
 
 ---
