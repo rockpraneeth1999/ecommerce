@@ -31,7 +31,7 @@ export default function Cart() {
   };
 
   const handleRemove = async (itemId) => {
-    await removeCartItem(itemId);
+    await removeCartItem(cartId, itemId);
     getCart();
   };
 

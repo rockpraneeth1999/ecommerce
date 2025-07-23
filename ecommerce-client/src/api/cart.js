@@ -13,6 +13,6 @@ export const updateCartItem = async (itemId, quantity, cartId) => {
     return await API.put(`/cart/${cartId}/${itemId}`, { quantity });
 };
 
-export const removeCartItem = async (itemId) => {
-    return await API.delete(`/cart/${itemId}`);
+export const removeCartItem = async (cartId, itemId) => {
+    return await API.delete(`/cart/${cartId}/${itemId}`);
 };

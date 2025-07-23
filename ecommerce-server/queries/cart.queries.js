@@ -35,8 +35,13 @@ exports.updateCartItemQuantity = async (cartId, itemId, quantity) => {
     return item;
 };
 
-exports.deleteCartItem = async (itemId) => {
-    const item = await CartItem.findByPk(itemId);
+exports.deleteCartItem = async (cartId, itemId) => {
+    const item = await CartItem.findOne({
+        where: {
+            CartId: cartId,
+            ProductId: itemId,
+        },
+    });
     if (!item) return null;
     await item.destroy();
     return item;

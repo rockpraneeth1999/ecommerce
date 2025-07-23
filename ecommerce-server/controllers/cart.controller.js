@@ -51,7 +51,7 @@ exports.updateCartItem = async (req, res) => {
 
 exports.removeCartItem = async (req, res) => {
     try {
-        const removed = await deleteCartItem(req.params.itemId);
+        const removed = await deleteCartItem(req.params.cartId, req.params.itemId);
         if (!removed) return errorResponse(res, "Not found", 404);
         return successResponse(res, "Removed");
     } catch (e) {
