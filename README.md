@@ -18,7 +18,7 @@ A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (fro
 
 1. Ensure MySQL is installed and running.
 2. Open MySQL Workbench (or your preferred client).
-3. Copy and execute the `create_schema.sql` file inside the `ecommerce-db` folder to create the required database and tables.
+3. Copy and execute the `create_schema.sql` file inside the `ecommerce-db` folder to create the required database.
 
 ### 2. Backend Setup
 
@@ -83,10 +83,7 @@ A full-stack Ecommerce application built with React (Vite) and Tailwind CSS (fro
 
 You can populate the product list with sample data:
 
-1. Execute the `generate_products.js` script from the `ecommerce-db` folder:
-   ```
-   node ecommerce-db/generate_products.js
-   ```
+1. Execute the `generate_products.sql` script from the `ecommerce-db` folder.
 
 ---
 
