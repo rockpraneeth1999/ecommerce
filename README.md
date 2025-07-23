@@ -88,7 +88,7 @@ You can populate the product list with sample data:
 ---
 
 ## 📂 Project Structure
-
+```
 ECOMMERCE
 ├── ecommerce-client
 │   ├── public
@@ -109,3 +109,4 @@ ECOMMERCE
 │   ├── queries
 │   ├── routes
 │   └── utils
+```
