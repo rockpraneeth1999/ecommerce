@@ -23,7 +23,8 @@ export default function ManageProducts() {
 
   const handleEdit = (product) => {
     setEditing(product.id);
-    setForm({ name: product.name, price: product.price, stock: product.stock });
+    // setForm({ name: product.name, price: product.price, stock: product.stock });
+    setForm({ name: product.name, price: product.price });
   };
 
   const handleUpdate = async (id) => {
@@ -33,10 +34,12 @@ export default function ManageProducts() {
   };
 
   const handleDelete = async (id) => {
-    if (confirm("Delete this product?")) {
-      await deleteProduct(id);
-      getProducts();
-    }
+    // if (confirm("Delete this product?")) {
+    //   await deleteProduct(id);
+    //   getProducts();
+    // }
+    await deleteProduct(id);
+    getProducts();
   };
 
   return (
@@ -61,12 +64,12 @@ export default function ManageProducts() {
                 onChange={(e) => setForm({ ...form, price: e.target.value })}
                 className="border p-1 mr-2 w-20"
               />
-              <input
+              {/*<input
                 type="number"
                 value={form.stock}
                 onChange={(e) => setForm({ ...form, stock: e.target.value })}
                 className="border p-1 mr-2 w-20"
-              />
+              />*/}
               <button
                 onClick={() => handleUpdate(product.id)}
                 className="bg-green-600 text-white px-2 py-1 rounded"

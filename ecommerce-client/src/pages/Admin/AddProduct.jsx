@@ -12,7 +12,7 @@ export default function AddProduct() {
     try {
       await createProduct({ name, description, price });
       // await createProduct({ name, description, price, stock });
-      alert("Product added successfully!");
+      // alert("Product added successfully!");
       setName("");
       setDescription("");
       setPrice("");

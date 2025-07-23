@@ -28,7 +28,7 @@ export default function Products() {
   const handleAddToCart = async (productId) => {
     try {
       await API.post("/cart", { productId, quantity: 1 });
-      alert("Added to cart!");
+      // alert("Added to cart!");
     } catch {
       alert("Error adding to cart.");
     }

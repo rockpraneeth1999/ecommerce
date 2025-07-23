@@ -38,7 +38,7 @@ export default function Cart() {
   const handleCheckout = async () => {
     try {
       await API.post("/orders");
-      alert("Order placed successfully!");
+      // alert("Order placed successfully!");
       navigate("/products");
     } catch {
       alert("Failed to place order");
